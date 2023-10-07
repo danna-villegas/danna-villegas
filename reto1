@@ -1,0 +1,69 @@
+function getNestedRecordsExample(){
+    return [
+{
+id: 1,
+nombre: 'Camila Lopez',
+detalles: {
+    descripcion: 'matricula normal',
+    contacto: {
+        email:'clopez@gmail.com',
+        telefono: 83242834
+    },
+     valorMatricula1: 200000
+},
+},
+{
+  id: 2,
+  nombre: 'Pedro Perez',
+  detalles: {
+    descripcion:  'beca',
+    contacto: {
+        email: 'pperez@gmail.com',
+        telefono: 83242834
+    },
+     valorMatricula2: 0
+},
+},
+{ 
+     id: 3,
+nombre: 'Juan Yarce',
+detalles: {
+    descripcion: 'matricula normal',
+    contacto: {
+        value:'jyarce@gmail.com',
+        telefono: 69874553
+    },
+     valorMatricula3: 400000
+}
+},
+{
+ id: 4,
+nombre: 'Alberto Benitez',
+detalles: {
+    descripcion: 'matricula normal',
+    contacto: {
+        value: 'abenitez@gmail.com',
+        telefono: 68745129
+    },
+     valorMatricula4: 600000
+},
+},
+];
+}
+
+const fun = getNestedRecordsExample();
+console.log (fun) 
+
+function suma (matricula1, matricula2, matricula3, matricula4)
+{
+    var suma; 
+    suma= matricula1+ matricula2 + matricula3 + matricula4; 
+    document.write("suma =",suma);
+}
+var matricula1, matricula2, matricula3, matricula4;
+matricula1 =200000;
+matricula2 =0;
+matricula3 =400000;
+matricula4 =600000;
+
+suma (matricula1, matricula2, matricula3, matricula4);
